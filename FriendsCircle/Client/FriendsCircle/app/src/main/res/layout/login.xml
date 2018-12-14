@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/login_back">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/wechat_icon"
+        android:layout_marginTop="50dp"
+        android:id="@+id/login_Icon"
+        android:layout_marginBottom="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/phone"
+            android:id="@+id/login_Image1"
+            android:layout_marginStart="15dp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="用户名/手机号/邮箱"
+            android:gravity="center"
+            android:id="@+id/login_User"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/pwd"
+            android:id="@+id/login_Image2"
+            android:layout_marginStart="15dp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="请输入密码"
+            android:gravity="center"
+            android:id="@+id/login_Pwd"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="登    录"
+        android:textSize="20dp"
+        android:id="@+id/login_Login"
+        android:layout_marginTop="10dp"
+        android:onClick="login"
+        android:background="@drawable/button"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注    册"
+            android:textSize="20dp"
+            android:id="@+id/login_Register"
+            android:layout_marginStart="15dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:textSize="20dp"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/register_back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/back"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="top|left"
+            android:clickable="true"
+            android:id="@+id/register_back"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icon"
+        android:layout_marginTop="80dp"
+        android:clickable="true"
+        android:onClick="add"
+        android:id="@+id/register_Icon"
+        android:layout_marginBottom="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/name"
+            android:id="@+id/register_Image1"
+            android:layout_marginStart="15dp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="请输入昵称"
+            android:gravity="center"
+            android:id="@+id/register_User"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/pwd"
+            android:id="@+id/register_Image2"
+            android:layout_marginStart="15dp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="请输入密码"
+            android:gravity="center"
+            android:id="@+id/register_Pwd"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/phone"
+            android:id="@+id/register_Image4"
+            android:layout_marginStart="15dp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="请输入手机号"
+            android:gravity="center"
+            android:id="@+id/register_Phone"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="注    册"
+        android:textSize="20dp"
+        android:onClick="register"
+        android:id="@+id/register_Register"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"/>
+
+</LinearLayout>
+
